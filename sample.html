@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Website</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cfe1cf, #4cf14c); /* Green gradient background */
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    color: #000000; /* Black text color */
+  }
+  .heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .button {
+    background-color: #000000; /* Black button background */
+    color: #ffffff; /* White button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .events {
+    display: none;
+    text-align: left;
+  }
+  .event {
+    margin-bottom: 10px;
+  }
+  .event-name {
+    display: inline-block;
+    width: 60%; /* Adjust width as needed */
+    text-align: center;
+  }
+  .event-time {
+    display: inline-block;
+    width: 20%; /* Adjust width as needed */
+    text-align: left;
+  }
+  .event-add {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  hr {
+    border: 1px solid #000000; /* Black horizontal rule */
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="heading">Event Name</div>
+  <div class="button-container">
+    <button class="button" onclick="showEvents('day1')">Day 1</button>
+    <button class="button" onclick="showEvents('day2')">Day 2</button>
+  </div>
+  <div id="day1" class="events">
+    <div class="event">
+      <span class="event-time">10:00 AM</span>
+      <span class="event-name">Event 1</span>
+      <span class="event-add">+</span>
+    </div>
+    <hr>
+    <div class="event">
+      <span class="event-time">2:00 PM</span>
+      <span class="event-name">Event 2</span>
+      <span class="event-add">+</span>
+    </div>
+    <hr>
+    <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+    <!-- Add more events here -->
+  </div>
+  <div id="day2" class="events">
+    <div class="event">
+      <span class="event-time">11:00 AM</span>
+      <span class="event-name">Event 3</span>
+      <span class="event-add">+</span>
+    </div>
+    <hr>
+    <div class="event">
+      <span class="event-time">3:00 PM</span>
+      <span class="event-name">Event 4</span>
+      <span class="event-add">+</span>
+    </div>
+    <hr>
+    <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+      <div class="event">
+        <span class="event-time">3:00 PM</span>
+        <span class="event-name">Event 4</span>
+        <span class="event-add">+</span>
+      </div>
+      <hr>
+    <!-- Add more events here -->
+  </div>
+</div>
+
+<script>
+function showEvents(day) {
+  var events = document.getElementsByClassName('events');
+  for (var i = 0; i < events.length; i++) {
+    events[i].style.display = 'none';
+  }
+  document.getElementById(day).style.display = 'block';
+}
+</script>
+</body>
+</html>
